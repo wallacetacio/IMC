@@ -44,37 +44,37 @@ Esse programa irá calcular o índicie de massa corporal, de acordo com os dados
                Console.ResetColor();
                }
 
-               if(IMC <= 18.5 && IMC > 16){
+               else if(IMC <= 18.5){
                    Console.ForegroundColor = ConsoleColor.Blue;
                Console.WriteLine("Abaixo do peso.");
                Console.ResetColor();
                }
 
-               if(IMC <= 24 && IMC > 18.5){ 
+               else if(IMC <= 24){ 
                    Console.ForegroundColor = ConsoleColor.DarkGreen;
                Console.WriteLine("Peso ideal (normal).");
                Console.ResetColor();
                }
 
-               if(IMC <= 30 && IMC > 24){ 
+               else if(IMC <= 30){ 
                    Console.ForegroundColor = ConsoleColor.DarkYellow;
                Console.WriteLine("Acima do peso.");
                Console.ResetColor();
                }
 
-               if(IMC <= 35 && IMC > 30){
+               else if(IMC <= 35){
                    Console.ForegroundColor = ConsoleColor.Yellow;
                Console.WriteLine("Obesidade nível 1.");
                Console.ResetColor();
                }
 
-               if(IMC <= 40 && IMC > 35){
+               else if(IMC <= 40){
                    Console.ForegroundColor = ConsoleColor.Magenta;
                Console.WriteLine("Obesidade nível 2.");
                Console.ResetColor();
                }
 
-               if(IMC > 40){
+               else if(IMC > 40){
                    Console.ForegroundColor = ConsoleColor.Red;
                Console.WriteLine("Obesidade nível 3.");
                Console.ResetColor();
